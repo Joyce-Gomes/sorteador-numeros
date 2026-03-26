@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/Logo.png">
+  <title>Sorteador de Números</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&family=Roboto+Mono:wght@700&family=Roboto+Flex:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="container">
+
+    <div class="topo">
+      <img src="assets/Logo.png" alt="Logo">
+      <span>NUMBERS</span>
+    </div>
+
+    <div class="hero">
+
+      <!-- LADO ESQUERDO -->
+      <div>
+        <div class="titulo-pequeno">ONLINE — GRATUITO</div>
+        <div class="titulo-principal">SORTEADOR<br>DE NÚMEROS</div>
+
+        <div class="info">
+         <div class="info-item">
+          <img src="assets/persona.png" alt="Um bonequinho">
+          <h4>Como funciona o sorteador de números?</h4>
+          </div>
+          <p>O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do intervalo especificado pelo usuário.</p>
+
+          <div class="info-item">
+          <img src="assets/persona.png" alt="Um bonequinho">
+          <h4>Posso escolher o intervalo dos números?</h4>
+          </div>
+          <p>Sim, você pode definir os valores mínimo e máximo para o intervalo dos números sorteados.</p>
+        </div>
+      </div>
+
+      <!-- LADO DIREITO -->
+      <div class="card-sorteio">
+        <h3>QUERO SORTEAR:</h3>
+        <p>Defina o intervalo e a quantidade de números, clique em “Sortear” e veja os resultados na tela.</p>
+
+        <form id="sorteioForm" class="form-sorteio" novalidate>
+          <div class="inputs-grid">
+            <label class="sr-only" for="quantidade">Quantidade de números</label>
+            <input type="number" id="quantidade" placeholder="Qtd" min="1" inputmode="numeric" />
+
+            <label class="sr-only" for="minimo">Valor mínimo</label>
+            <input type="number" id="minimo" placeholder="De" inputmode="numeric" />
+
+            <label class="sr-only" for="maximo">Valor máximo</label>
+            <input type="number" id="maximo" placeholder="Até" inputmode="numeric" />
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" id="naoRepetir" />
+            <label for="naoRepetir" class="checkbox-label">
+              <span>Não repetir número</span>
+            </label>
+          </div>
+
+          <button class="btn-gradiente" id="sortearBtn" type="button">
+            SORTEAR
+            <span class="btn-seta" aria-hidden="true">→</span>
+          </button>
+          <p id="mensagem" class="mensagem" aria-live="polite"></p>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="resultado" aria-live="polite">
+      <div class="resultado-container">
+        <h2>RESULTADO DO SORTEIO</h2>
+        <div id="resultado" class="numeros-sorteados"></div>
+        <button class="botao-novamente" id="sortearNovamenteBtn" type="button">
+          <img src="assets/botaoSortearNovamente.png" alt="Sortear novamente">
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
