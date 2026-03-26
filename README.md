@@ -32,7 +32,8 @@ Durante o desenvolvimento, foram praticados:
 ## Preview
 
 <img width="1232" height="664" alt="image" src="https://github.com/user-attachments/assets/0d197268-ca36-46be-a090-aa0a6c1852b7" />
-<img width="681" height="738" alt="image" src="https://github.com/user-attachments/assets/6725bace-fa74-4761-8fd0-d93d2b8a728e" />
+<img width="1139" height="739" alt="image" src="https://github.com/user-attachments/assets/5f15ab36-de4e-4463-99fe-201cd77978fe" />
+
 
 
 ## Como executar
