@@ -35,7 +35,6 @@ Durante o desenvolvimento, foram praticados:
 <img width="1139" height="739" alt="image" src="https://github.com/user-attachments/assets/5f15ab36-de4e-4463-99fe-201cd77978fe" />
 
 
-
 ## Como executar
 
 1. Clone o repositório
